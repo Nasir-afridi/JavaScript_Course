@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Booleans</title>
+</head>
+<body>
+  <script>
+    //purpose of booleans value is to represent something is true orr false
+    console.log(3 < 5); // true
+
+
+
+    
+    //it is also called equality operator double equals convert both values into the same type it will convert both of these into nmbrr 5 and then compare.it is not good because one value is number and second one is string.
+    console.log(5 == '5.0');
+
+
+
+    
+    //comparison operators have lower priority then math operators
+    console.log(3 > 5 - 5);//it wil minus the 5-5 ans is 0 and then it compare .
+
+
+
+
+    //The === operator in JavaScript is called the strict equality operator. It checks if two values are equal, both in value and type. This means that it not only checks the value of the two operands but also checks if they are of the same data type.
+    console.log('hello' === 2);
+
+
+
+
+
+    /*****Conditions*****/
+    if(true){                    //if the boolean value inside the if condition brackets is true it will display the message inside if condition
+      console.log('hello');     //it is called branches in js
+    }else{
+      console.log('hi there!');   //otherwise it display the value inside the else.
+    }
+
+
+
+
+    const age = 15;                        //combine it with conditions
+
+    if(age >= 18){                        //in this condition it will check number wise.
+      console.log('You can drive');      //if the branches inside the if condition is single the curly braces is optional 
+    }else if (age >= 14){
+      console.log('You can also drive');
+    } else{
+      console.log('you cant drive');
+    }
+  </script>
+</body>
+</html>

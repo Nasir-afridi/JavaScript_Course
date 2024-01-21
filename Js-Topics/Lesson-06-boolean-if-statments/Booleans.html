@@ -5,7 +5,7 @@
 </head>
 <body>
   <script>
-    //purpose of booleans value is to represent something is true orr false
+     //purpose of booleans value is to represent something is true orr false
     console.log(3 < 5); // true
 
 
@@ -13,15 +13,9 @@
     
     //it is also called equality operator double equals convert both values into the same type it will convert both of these into nmbrr 5 and then compare.it is not good because one value is number and second one is string.
     console.log(5 == '5.0');
-
-
-
-    
+  
     //comparison operators have lower priority then math operators
-    console.log(3 > 5 - 5);//it wil minus the 5-5 ans is 0 and then it compare .
-
-
-
+    console.log(3 > 5 - 5);//it wil minus the 5-5 ans is 0 and then it compare 
 
     //The === operator in JavaScript is called the strict equality operator. It checks if two values are equal, both in value and type. This means that it not only checks the value of the two operands but also checks if they are of the same data type.
     console.log('hello' === 2);
@@ -30,17 +24,14 @@
 
 
 
-    /*****Conditions*****/
+    //*****Conditions*****
     if(true){                    //if the boolean value inside the if condition brackets is true it will display the message inside if condition
       console.log('hello');     //it is called branches in js
     }else{
       console.log('hi there!');   //otherwise it display the value inside the else.
     }
 
-
-
-
-    const age = 15;                        //combine it with conditions
+    const age = 15;                        //combine variable with conditions
 
     if(age >= 18){                        //in this condition it will check number wise.
       console.log('You can drive');      //if the branches inside the if condition is single the curly braces is optional 
@@ -49,6 +40,37 @@
     } else{
       console.log('you cant drive');
     }
+
+
+
+
+
+    //Logical operators
+    // it has lower priority than math and comparison operator
+
+    console.log(true && true); //in and operator the both sides of the condition must be true.
+    console.log(true || false);//in or operator only one side of the condition is true then its executed
+    console.log(!true);//the not operator will change the true into false and false into true
+
+
+
+
+      // truthy and falsy values
+      //falsy value is false 0 '' Nan undefined null .otherwise all the values is truthy.
+      //Nan : stands for not a number
+      //indefined represents that somthing does'nt have a value we use this variable always with let.
+    if(5){
+      console.log('hello');
+    }
+
+
+
+    //ternary operators.
+    //in the long term of conditions we use if-else but in short terms we use ternary operators this is the best praactice.
+
+     true ? 'hello' : 'falsy'     //this is the syntax for ternary operator in this condition the Qmark and hello is if condition and semicolon and falsy is else condition
+
+    const result = 2 < 3 ? 'ok do it' : 'dont do it';//benefit of ternary operator over if condition is to store it in a variable.
   </script>
 </body>
 </html>

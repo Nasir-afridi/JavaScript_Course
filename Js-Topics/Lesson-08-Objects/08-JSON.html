@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>JSON</title>
+</head>
+<body>
+  <script>
+
+    /* 
+      JSON does not support single quotes.and it does  not     support functions.it is a syntax that is similiar to JavaScript but with less features.
+
+      **why we use json syntax instead of js obect syntax?**
+      1.A js object only make sense in js.
+      2.Jason syntax is understood by every programming language.that why json syntax is more universal.
+
+      ** we use JSON**
+      -When we send data between computers.
+      -when we store data.
+
+      ** Built-in JSON Object.**
+      it convert : "Js-object into JSON" and "JSON into Js object".
+
+      **Next built-in object**
+      1.Local storage: save values more permanently.it only support strings.
+    
+
+
+      we convert Js-object into JSON
+      const product = {
+          Name: 'Socks',
+          Cost: 1000
+      };
+       console.log(JSON.stringify(product));
+
+       convert json into js-object.
+       const jsonstring = JSON.stringify(product);
+       console.log(JSON.parse(jsonstring));
+
+      localStorage.setItem('mes','22');
+      console.log(localStorage.getItem('mes'));
+    
+
+
+
+      
+      objects have property and methods but other values also have properties and method.and these properties are string not object.Js has a special feature called "auto-boxing".js automatically wraps this string in a special object and this object has a properties lenght,uppercase etc.it is done automatically.lenght property tells us how many characters or letter does hello string.Uppercase can convert all of these in the large words e.g HELLO.
+      
+
+
+      console.log('hello'.length);
+      console.log('hello'.toUpperCase());
+    */
+
+
+
+
+    /*
+      below we can equal object2 to 1.in this case the code save in object1 does'nt make a copy of this.it just makes a copy of reference that point to the object.js doesnot copy the entire code its just copy the reference of the object which is much faster.this is called "copy by reference".
+    
+
+
+      const object1 = {
+        message:'hello'
+      };
+
+      const object2 = object1;
+      
+
+
+      notice that we can change the value of object and at the top we can declare it with const.that because this variable just contains a reference that points to the object.const can only change the reference in the variable.
+
+
+      object1.message = 'Good Job!';
+      console.log(object1);
+    
+
+      we cant compare objects directly.if we give a same value that i can give to a object1 and equals it it cannot show the result in true because objects does not see the values orr differentiate b/w values it can do it b/w references.
+
+      const object3 = {
+      message:'Good job!'
+      };
+      console.log(object3 === object1);
+    */
+
+    
+
+      /*  **shortcuts for objects**  
+      if the variable name and property are same that we can see below we use the shortcut.this shortcut is called destructing.
+      */
+    const object4 = {
+      message:'Good job!'
+    };
+
+    //const message = object4.message;
+    const {message} = object4;
+    console.log(message);
+  </script>
+</body>
+</html>jj

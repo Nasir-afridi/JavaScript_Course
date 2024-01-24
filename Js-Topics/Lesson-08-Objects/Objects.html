@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Objects</title>
+</head>
+<body>
+  <script>
+    //An object groups multiple value together. we can save an object inside a variable.it also allow us to use  multiple value together.inside an object we can save any type of value.
+
+    /* JSON does not support single quotes.and it does not support functions.it is a syntax that is similiar to JavaScript but with less features.*/
+
+
+
+    /* why we use json syntax instead of js obect syntax? 
+       1.A js object only make sense in js.
+       2.Jason syntax is understood by every programming language.that why json syntax is more universal.
+
+       we use JSON
+       -When we send data between computers.
+       -when we store data.
+    */
+
+
+
+    const product = {     // syntax for making object.
+      Name : 'Socks',    // value is socks.
+      Price : 1090,
+      ['delievery - time']: '1 day', //using bracket notation we also add a values to the object when we create it.we also use variable calculation.
+
+      
+      // this is called nested object.or an object inside another object.
+      rating: {
+        stars: 4.5,
+        count: 87
+      },
+
+
+      //we can also add the functions inside the object.this is bcz function is another type of value in js and we can save it in objects.when we can save a function inside the object it it called "Method".
+      fun: function function1() {
+       console.log('Hello');
+      }
+    }; 
+
+    
+    console.log(product);  // accsess full object.
+    console.log(product.Name); // we can accsess single value of object.this syntax is also called dot notation.
+
+
+    product.Name = 'Cotton Socks'; //changing the value of the name property.
+    console.log(product);
+
+
+    product.Sum = 2 + 2; //Adding a property sum and it value 2+2 in object named product.
+    console.log(product);
+
+
+    delete product.Sum; // deleting a valur from object.
+    console.log(product);
+
+
+    console.log(product['Name']); // this is called bracket notation. this can work same as Brack.Not
+
+
+    console.log(product['delievery - time']); // in this case we gonna use the bracket notation bcz in dot notation js will do the - . so instead of using dot notation we use the bracket notation .
+
+    console.log(product['rating']);
+
+    
+    product.fun();
+  </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DOM</title> 
+</head>
+<body>
+
+  <button>hello</button>
+  <button class="js-btn">second button</button>
+  <script>
+    /*
+      DOM is a built in object called document object.
+      Document is a built in object provided by javascript.
+      in the below example this code will remove everything on the page and replaces it with hello.
+      The Document object is linked to the webpage.
+      Document object represents or models the webpage.
+      innerHTML property controls all the HTML inside the body.that's why it is called inner html.
+    
+
+        document.body.innerHTML = 'hello';
+        document.title = 'Good job!';
+      -------------------------------------------------------
+
+                    *** Properties ****
+        console.log(document.title);default title name is Dom.
+        document.title = 'Changed'; changed the title.
+      --------------------------------------------------------
+
+      when we have html element(body)inside our js.HTML element is converted into Js-object.
+        console.log(typeof document.body);
+        document.body.innerHTML = 'changed';
+      ------------------------------------------------------
+      
+      Now another feature of inner HTML is that we can replace this html with new html code not just text. for e.g:
+        document.body.innerHTML = '<button>Hello</button>'
+      ------------------------------------------------------
+
+                      *** Methods ***
+      Method is a function that is saved inside the object.
+      document.querySelector():Let us get any element to the page and put it inside the javascript.in the bracket we tell him which element to get from the page.when an html element is inside js.its just a js object.Every html element has a property called .innerHTML.
+      ------------------------------------------------------
+
+      so document.querySelector() get any element from the page and put it inside the js and then we gonna change the inner html of it for e.g: see below
+          console.log(document.querySelector('button')
+            .innerHTML = 'changed');
+       ------------------------------------------------------
+
+      if two or more buttons added to the html body we can give it class and then target it see below in example.
+    */
+        document.querySelector('.js-btn')
+          .innerHTML = 'changed';
+  </script>
+</body>
+</html>

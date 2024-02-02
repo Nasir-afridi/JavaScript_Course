@@ -1,0 +1,86 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <title>Arrays-loops</title>
+ </head>
+ <body>
+    <script>
+      /*
+      Def:array stores multiple values and elements in one variable.
+      this is an array. its represents the list of three numbers.
+      arrays are list of values.
+      arrays themselves are also values which means we save them in a variable.
+      the value inside the square bracket is called index.
+      inside array we can put any type of value.
+      arrays have properties and methods.
+      array is an object(its just a special type of object).
+      array are references.
+      
+      const myArray = [10, 20, 30];
+      console.log(myArray);
+      */
+
+      /*
+      this will display the first value of array which is 10.
+      the value inside the square bracket is called index.it represents the postion in the array that we get.
+      the index starts with 0 and so on.
+      
+      console.log(myArray[0]);
+      console.log(myArray[1]);
+      console.log(myArray[2]); 
+      */
+
+      //for changing the values of array.
+      /*myArray[0] = 15;
+      console.log(myArray[0]);*/
+
+
+      //property of array.
+     // console.log(myArray.length);
+
+
+      /*
+       methods of array.
+      .push():this add value to the end of the array.
+      
+       myArray.push(40);
+       console.log(myArray);
+       .splice():it removes a values from an array.the first value is the index we remove. second is nmbr of values we want to remove.
+       myArray.splice(3, 1);
+       console.log(myArray);
+      
+
+       const values = [10, 20, 30];
+       console.log(values);
+
+       values[1] = 15;
+       console.log(values);
+
+       values.push(20);
+       console.log(values);
+
+       values[2] = 18;
+       console.log(values);
+
+       values.splice(3);
+       console.log(values);
+      
+       console.log(values.length);
+       */
+
+       const array1 = [1, 2, 3];
+       const array2 = array1;
+       array2.push(4);
+       console.log(array2);
+       console.log(array1);
+
+      //break feature of loops.it exit a loop early.
+       for(let i = 1; i <= 10; i++){
+         console.log(i);
+         if(i === 8){
+            break;
+         }
+       }
+    </script>
+ </body>
+ </html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>functions</title>
+</head>
+<body>
+  <script>
+    /*
+    function is a value anything we can do with a value we can also do it with functions
+
+
+    function reading() {
+      console.log('hello');
+    }
+    reading(); calling the functions.
+
+    
+    const function1 = function () {   this is called anonymus function which means function without values.
+      console.log('hello');
+    };
+    function1();
+
+
+    const object1 = {  func are values so we can save it in a object value.
+      num: 2,
+      fun: function text() {
+        console.log('hello2');
+      }
+    };
+    object1.fun();
+    
+
+    passing a function into a function
+    function tezt (param){
+      param();
+    }
+    tezt(function sum() {     the function that we can passing in is called call back
+      console.log(2+2);
+    });
+    
+
+     it is a built in function.it takes two parameters.
+     first is the value that we run in the future.
+     second is the time how long to wait before running this function.
+     we can pass a function into it as a value.it is asynchrounus.
+    
+    setTimeout(function text() {
+      console.log('time is out');
+    }, 4000);
+
+    setInterval(function() {
+      console.log('Hello');
+    }, 6000);
+    
+    */
+
+    [
+      'make dishes',
+      'watch me motherfucker',
+      'shut your mouth'
+    ].forEach(function(value) {
+      if(value === 'make dishes'){
+        return;
+      }
+
+      console.log(value);
+    });
+
+    
+  </script>
+</body>
+</html>
